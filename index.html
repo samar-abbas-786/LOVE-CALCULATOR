@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love_Calculator</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+      }
+
+      input {
+        height: 50px;
+        width: 400px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 22px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        margin-top: 10px;
+      }
+      h3 {
+        font-size: 26px;
+      }
+
+      button {
+        height: 38px;
+        width: 150px;
+        color: white;
+        background-color: green;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        border-radius: 12px;
+        margin-top: 20px;
+      }
+      span {
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 40px;
+      }
+      @media screen and (max-width: 800px) {
+        body {
+          justify-content: flex-start;
+          padding-top: 10rem;
+        }
+        h1 {
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LOVE ❤️ CALCULATOR</h1>
+    <input type="text" id="male" placeholder="Write Male Name" />
+    <input type="text" id="female" placeholder="Write female Name" />
+
+    <button id="calculateBtn">CALCULATE</button>
+    <h3>Your Love Percentage is:</h3>
+    <span id="percentage"> </span>
+  </body>
+  <script src="index.js"></script>
+</html>
